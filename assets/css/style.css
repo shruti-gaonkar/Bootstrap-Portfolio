@@ -52,6 +52,21 @@ a.nav-header-link:hover{
     background-color: #ffffff;
 }
 
+/* Portfolio CSS*/
+
+.text-block {
+    position: absolute;
+    background-color: #4aaaa5;
+    color: white;
+    top: 50%;
+    left: 7.4%;
+    text-align: center;
+    width:12.5em;
+    line-height: 10px; 
+    padding: 20px;
+}
+
+
 #sticky-footer {
     flex-shrink: none;
 }
@@ -61,4 +76,32 @@ a.nav-header-link:hover{
     color: #ccccb3;
     border-top: 6px solid #4aaaa5;
     font-size: 0.8rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .text-block {
+        position: absolute;
+        background-color: #4aaaa5;
+        color: white;
+        top: 50%;
+        left: 13%;
+        text-align: center;
+        width:12.5em;
+        line-height: 10px; 
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .text-block {
+        position: absolute;
+        background-color: #4aaaa5;
+        color: white;
+        top: 50%;
+        left: 8%;
+        text-align: center;
+        width:12.5em;
+        line-height: 10px; 
+        padding: 20px;
+    }    
 }
