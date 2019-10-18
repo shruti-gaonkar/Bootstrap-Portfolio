@@ -28,20 +28,6 @@ h1{
     line-height: 1.7em;
 }
 
-/*a.nav-header-link, a:hover{
-    font-family: Georgia, Times, "Times New Roman", serif;
-    font-size: 1.7rem;
-    margin: 0 auto;
-    font-weight: bold;
-}
-
-a.nav-header-link:hover{
-    font-family: Georgia, Times, "Times New Roman", serif;
-    font-size: 1.7rem;
-    margin: 0 auto;
-    font-weight: bold;
-}*/
-
 #main-content {
     flex: 1 0 auto;
     background-image: url("../../assets/images/grey_sandbag.png");
@@ -52,21 +38,39 @@ a.nav-header-link:hover{
     background-color: #ffffff;
 }
 
-/* Portfolio CSS*/
+/* Start - Portfolio CSS*/
 
-.text-block {
-    position: absolute;
-    background-color: #4aaaa5;
-    color: white;
-    top: 50%;
-    left: 7.4%;
-    text-align: center;
-    width:12.5em;
-    line-height: 10px; 
-    padding: 20px;
+.view {
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
 }
 
-/* button css */
+.view .mask {
+  width: 200px;
+  position: absolute;
+  overflow: hidden;
+  top: 5px;
+  left: 5px;
+}
+
+.view p {
+  font-size: 1rem;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  background: #4aaaa5;
+  margin: 80px 0 0 0;
+  line-height: 10px; 
+  padding: 20px;
+  cursor: pointer;
+}
+
+/* End - Portfolio CSS*/
+
+/* Start - button css */
 
 .btn-primary {
     color: #ffffff;
@@ -120,7 +124,7 @@ a.nav-header-link:hover{
     box-shadow: 0 0 0 0.2rem rgba(74, 170, 165, 0.5);
   }
 
-  /*End of button css */
+  /*End - button css */
 
 #sticky-footer {
     flex-shrink: none;
@@ -131,32 +135,4 @@ a.nav-header-link:hover{
     color: #ccccb3;
     border-top: 6px solid #4aaaa5;
     font-size: 0.8rem;
-}
-
-@media only screen and (max-width: 768px) {
-    .text-block {
-        position: absolute;
-        background-color: #4aaaa5;
-        color: white;
-        top: 50%;
-        left: 13%;
-        text-align: center;
-        width:12.5em;
-        line-height: 10px; 
-        padding: 20px;
-    }
-}
-
-@media only screen and (max-width: 540px) {
-    .text-block {
-        position: absolute;
-        background-color: #4aaaa5;
-        color: white;
-        top: 50%;
-        left: 8%;
-        text-align: center;
-        width:12.5em;
-        line-height: 10px; 
-        padding: 20px;
-    }    
 }
